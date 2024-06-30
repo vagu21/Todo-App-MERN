@@ -1,0 +1,26 @@
+{
+  "name": "todo-application",
+  "version": "1.0.0",
+  "description": "A todo app created using MERN ",
+  "main": "server.js",
+  "scripts": {
+    "dev":"nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vagu21/Todo-App-MERN.git"
+  },
+  "author": "Bharadwaj Sathwik Vagu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vagu21/Todo-App-MERN/issues"
+  },
+  "homepage": "https://github.com/vagu21/Todo-App-MERN#readme",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.4",
+    "nodemon": "^3.1.4"
+  }
+}

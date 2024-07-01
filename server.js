@@ -40,6 +40,16 @@ return res.json(await Task.find())
        console.log(err)
     }
 })
+app.put('/updatetask/:id', async (req, res) => {
+    const { todo } = req.body;
+    try {
+      await Task.findByIdAndUpdate(req.params.id, { todo });
+      return res.json(await Task.find());
+    } catch (err) {
+      console.log(err);
+      res.status(500).json({ message: 'Error updating task' });
+    }
+  });
 app.listen(5000, () => {
   console.log('server is running')
 });

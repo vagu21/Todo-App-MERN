@@ -4,7 +4,9 @@
   "description": "A todo app created using MERN ",
   "main": "server.js",
   "scripts": {
-    "dev":"nodemon server"
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/vagu21/Todo-App-MERN#readme",
   "dependencies": {
+    "axios": "^1.7.2",
     "concurrently": "^8.2.2",
     "cors": "^2.8.5",
     "express": "^4.19.2",
